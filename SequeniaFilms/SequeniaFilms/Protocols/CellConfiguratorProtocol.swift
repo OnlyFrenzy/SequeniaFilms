@@ -16,8 +16,4 @@ extension CellConfiguratorProtocol {
     var cellIdentifier: String {
         return Self.className
     }
-
-    var selectionClosure: (() -> Void)? {
-        return nil
-    }
 }

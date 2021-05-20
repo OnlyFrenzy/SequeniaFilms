@@ -16,7 +16,7 @@ class DetailFilmViewController: UIViewController {
     @IBOutlet private weak var ratingLabel: UILabel!
     @IBOutlet private weak var descriptionTextView: UITextView!
     
-    var viewModel: DetailListViewModelProtocol!
+    var viewModel: DetailFilmViewModelProtocol!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +32,7 @@ class DetailFilmViewController: UIViewController {
         nameLabel.text = viewModel.getName()
         localNameLabel.text = viewModel.getLocalName()
         ratingLabel.text = String(viewModel.getRating())
-        ratingLabel.textColor = ColorConfigurator().configureColorRatingLabel(rating: viewModel.getRating())
+        ratingLabel.textColor = ColorConfigurator.configureColorRatingLabel(rating: viewModel.getRating())
         descriptionTextView.text = viewModel.getDescription()
     }
 }

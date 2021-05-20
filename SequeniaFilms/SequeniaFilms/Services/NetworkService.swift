@@ -24,8 +24,10 @@ class NetworkService: NetworkServiceProtocol {
         guard let url = URL(string: (Router.filmsURLString.rawValue)) else { return }
         httpClient.request(url: url, decodeType: Films.self, completion: completion)
     }
+    
+    private enum Router: String {
+        case filmsURLString = "https://s3-eu-west-1.amazonaws.com/sequeniatesttask/films.json"
+    }
 }
 
-enum Router: String {
-    case filmsURLString = "https://s3-eu-west-1.amazonaws.com/sequeniatesttask/films.json"
-}
+

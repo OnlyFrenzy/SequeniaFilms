@@ -31,4 +31,3 @@ struct Film: Codable {
     }
 }
 
-typealias FilmResponse = [Film]

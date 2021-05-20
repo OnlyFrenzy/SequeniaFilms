@@ -9,7 +9,7 @@ import UIKit
 
 class ColorConfigurator {
     
-    func configureColorRatingLabel( rating : Double) -> UIColor {
+    static func configureColorRatingLabel(rating: Double) -> UIColor {
         switch rating {
         case 7...:
             return #colorLiteral(red: 0, green: 0.4823529412, blue: 0, alpha: 1)

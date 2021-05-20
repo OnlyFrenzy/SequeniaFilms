@@ -11,7 +11,7 @@ import Alamofire
 class HttpClient {
     
     func request<T: Codable> (url: URL, decodeType: T.Type, completion: @escaping (T?, Error?) -> ()) {
-        let request = Session.default.request(url, method: .get) { $0.timeoutInterval = 10}
+        let request = Session.default.request(url, method: .get) { $0.timeoutInterval = 10 }
         request.responseData { (response) in
             if let data = response.data {
                 do {

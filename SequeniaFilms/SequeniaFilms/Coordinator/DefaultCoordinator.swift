@@ -33,7 +33,7 @@ class DefaultCoordinator: Coordinator {
         navigationController.pushViewController(viewController, animated: false)
     }
     
-    func pushDetailViewController(imageURL: String,
+    private func pushDetailViewController(imageURL: String,
                                   name: String,
                                   localName: String,
                                   rating: Double,
@@ -50,13 +50,23 @@ class DefaultCoordinator: Coordinator {
         navigationController.pushViewController(detailViewController, animated: true)
     }
     
-    func pushBadServerViewController() {
-        guard let badServerViewController = storyboard.instantiateViewController(identifier: BadServerViewController.className) as? BadServerViewController else { assertionFailure("BadServerViewController is nil"); return  }
-        navigationController.pushViewController(badServerViewController, animated: true)
+    private func pushBadServerViewController() {
+        let alertVC = UIAlertController(
+            title: "Error",
+            message: "Error connecting to the server",
+            preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertVC.addAction(action)
+        navigationController.present(alertVC, animated: true, completion: nil)
     }
     
-    func pushNoInternetViewController() {
-        guard let noInternetViewController = storyboard.instantiateViewController(identifier: NoInternetViewController.className) as? NoInternetViewController else { assertionFailure("NoInternetViewController is nil"); return  }
-        navigationController.pushViewController(noInternetViewController, animated: true)
+    private func pushNoInternetViewController() {
+        let alertVC = UIAlertController(
+            title: "Error",
+            message: "No internet",
+            preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertVC.addAction(action)
+        navigationController.present(alertVC, animated: true, completion: nil)
     }
 }

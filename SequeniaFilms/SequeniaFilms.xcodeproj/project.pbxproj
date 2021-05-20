@@ -20,12 +20,12 @@
 		8E19FFAE2654EC18008DA757 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E19FFAD2654EC18008DA757 /* HttpClient.swift */; };
 		8E19FFB22654ECD0008DA757 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8E19FFB12654ECD0008DA757 /* Alamofire */; };
 		8E19FFB52654EDFB008DA757 /* Films.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E19FFB42654EDFA008DA757 /* Films.swift */; };
-		8E19FFBB2654F413008DA757 /* FilmCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E19FFB92654F413008DA757 /* FilmCellViewController.swift */; };
-		8E19FFBC2654F413008DA757 /* FilmCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E19FFBA2654F413008DA757 /* FilmCellViewController.xib */; };
+		8E19FFBB2654F413008DA757 /* FilmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E19FFB92654F413008DA757 /* FilmTableViewCell.swift */; };
+		8E19FFBC2654F413008DA757 /* FilmTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E19FFBA2654F413008DA757 /* FilmTableViewCell.xib */; };
 		8E19FFC02656461F008DA757 /* CellConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E19FFBF2656461F008DA757 /* CellConfiguratorProtocol.swift */; };
 		8E19FFC52656469B008DA757 /* NSObject+className.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E19FFC42656469B008DA757 /* NSObject+className.swift */; };
-		8E19FFCD26564A04008DA757 /* FilmHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E19FFCB26564A04008DA757 /* FilmHeaderViewController.swift */; };
-		8E19FFCE26564A04008DA757 /* FilmHeaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E19FFCC26564A04008DA757 /* FilmHeaderViewController.xib */; };
+		8E19FFCD26564A04008DA757 /* FilmHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E19FFCB26564A04008DA757 /* FilmHeaderView.swift */; };
+		8E19FFCE26564A04008DA757 /* FilmHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E19FFCC26564A04008DA757 /* FilmHeaderView.xib */; };
 		8E19FFD126564AEB008DA757 /* ConfigurableHeaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E19FFD026564AEB008DA757 /* ConfigurableHeaderProtocol.swift */; };
 		8E19FFD426564B25008DA757 /* HeaderConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E19FFD326564B25008DA757 /* HeaderConfiguratorProtocol.swift */; };
 		8E19FFD726564C55008DA757 /* ConfigurableCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E19FFD626564C55008DA757 /* ConfigurableCellProtocol.swift */; };
@@ -34,8 +34,6 @@
 		8E755B0F2656C5BF00B065A8 /* DetailFilmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E755B0E2656C5BF00B065A8 /* DetailFilmViewModel.swift */; };
 		8E755B122656CEBD00B065A8 /* ColorConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E755B112656CEBD00B065A8 /* ColorConfigurator.swift */; };
 		8E755B162656D7CD00B065A8 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8E755B152656D7CD00B065A8 /* Kingfisher */; };
-		8E755B1A2656F5EA00B065A8 /* BadServerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E755B192656F5E900B065A8 /* BadServerViewController.swift */; };
-		8E755B1E2656F61B00B065A8 /* NoInternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E755B1D2656F61B00B065A8 /* NoInternetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,12 +51,12 @@
 		8E19FFA92654EBFB008DA757 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		8E19FFAD2654EC18008DA757 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 		8E19FFB42654EDFA008DA757 /* Films.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Films.swift; sourceTree = "<group>"; };
-		8E19FFB92654F413008DA757 /* FilmCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmCellViewController.swift; sourceTree = "<group>"; };
-		8E19FFBA2654F413008DA757 /* FilmCellViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmCellViewController.xib; sourceTree = "<group>"; };
+		8E19FFB92654F413008DA757 /* FilmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmTableViewCell.swift; sourceTree = "<group>"; };
+		8E19FFBA2654F413008DA757 /* FilmTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmTableViewCell.xib; sourceTree = "<group>"; };
 		8E19FFBF2656461F008DA757 /* CellConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConfiguratorProtocol.swift; sourceTree = "<group>"; };
 		8E19FFC42656469B008DA757 /* NSObject+className.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+className.swift"; sourceTree = "<group>"; };
-		8E19FFCB26564A04008DA757 /* FilmHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmHeaderViewController.swift; sourceTree = "<group>"; };
-		8E19FFCC26564A04008DA757 /* FilmHeaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmHeaderViewController.xib; sourceTree = "<group>"; };
+		8E19FFCB26564A04008DA757 /* FilmHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmHeaderView.swift; sourceTree = "<group>"; };
+		8E19FFCC26564A04008DA757 /* FilmHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmHeaderView.xib; sourceTree = "<group>"; };
 		8E19FFD026564AEB008DA757 /* ConfigurableHeaderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableHeaderProtocol.swift; sourceTree = "<group>"; };
 		8E19FFD326564B25008DA757 /* HeaderConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderConfiguratorProtocol.swift; sourceTree = "<group>"; };
 		8E19FFD626564C55008DA757 /* ConfigurableCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCellProtocol.swift; sourceTree = "<group>"; };
@@ -66,8 +64,6 @@
 		8E755B0A2656C5B300B065A8 /* DetailFilmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFilmViewController.swift; sourceTree = "<group>"; };
 		8E755B0E2656C5BF00B065A8 /* DetailFilmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFilmViewModel.swift; sourceTree = "<group>"; };
 		8E755B112656CEBD00B065A8 /* ColorConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConfigurator.swift; sourceTree = "<group>"; };
-		8E755B192656F5E900B065A8 /* BadServerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadServerViewController.swift; sourceTree = "<group>"; };
-		8E755B1D2656F61B00B065A8 /* NoInternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInternetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +144,6 @@
 		8E19FF9B2654E9A0008DA757 /* FilmsList */ = {
 			isa = PBXGroup;
 			children = (
-				8E755B182656F5D100B065A8 /* ErrorsVC */,
 				8E755B092656C59800B065A8 /* DetailFilm */,
 				8E19FFC9265649CE008DA757 /* Headers */,
 				8E19FFC8265649A4008DA757 /* Cells */,
@@ -162,8 +157,8 @@
 		8E19FFB72654F3DB008DA757 /* FilmCell */ = {
 			isa = PBXGroup;
 			children = (
-				8E19FFB92654F413008DA757 /* FilmCellViewController.swift */,
-				8E19FFBA2654F413008DA757 /* FilmCellViewController.xib */,
+				8E19FFB92654F413008DA757 /* FilmTableViewCell.swift */,
+				8E19FFBA2654F413008DA757 /* FilmTableViewCell.xib */,
 			);
 			path = FilmCell;
 			sourceTree = "<group>";
@@ -206,8 +201,8 @@
 		8E19FFCA265649DA008DA757 /* FilmHeader */ = {
 			isa = PBXGroup;
 			children = (
-				8E19FFCB26564A04008DA757 /* FilmHeaderViewController.swift */,
-				8E19FFCC26564A04008DA757 /* FilmHeaderViewController.xib */,
+				8E19FFCB26564A04008DA757 /* FilmHeaderView.swift */,
+				8E19FFCC26564A04008DA757 /* FilmHeaderView.xib */,
 			);
 			path = FilmHeader;
 			sourceTree = "<group>";
@@ -219,15 +214,6 @@
 				8E755B0E2656C5BF00B065A8 /* DetailFilmViewModel.swift */,
 			);
 			path = DetailFilm;
-			sourceTree = "<group>";
-		};
-		8E755B182656F5D100B065A8 /* ErrorsVC */ = {
-			isa = PBXGroup;
-			children = (
-				8E755B192656F5E900B065A8 /* BadServerViewController.swift */,
-				8E755B1D2656F61B00B065A8 /* NoInternetViewController.swift */,
-			);
-			path = ErrorsVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,8 +283,8 @@
 			files = (
 				8E19FF8F2654E8C3008DA757 /* LaunchScreen.storyboard in Resources */,
 				8E19FF8C2654E8C3008DA757 /* Assets.xcassets in Resources */,
-				8E19FFBC2654F413008DA757 /* FilmCellViewController.xib in Resources */,
-				8E19FFCE26564A04008DA757 /* FilmHeaderViewController.xib in Resources */,
+				8E19FFBC2654F413008DA757 /* FilmTableViewCell.xib in Resources */,
+				8E19FFCE26564A04008DA757 /* FilmHeaderView.xib in Resources */,
 				8E19FF8A2654E8C0008DA757 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,16 +296,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E755B1E2656F61B00B065A8 /* NoInternetViewController.swift in Sources */,
 				8E19FFAA2654EBFB008DA757 /* NetworkService.swift in Sources */,
 				8E19FFC52656469B008DA757 /* NSObject+className.swift in Sources */,
 				8E19FF832654E8C0008DA757 /* AppDelegate.swift in Sources */,
 				8E19FFAE2654EC18008DA757 /* HttpClient.swift in Sources */,
 				8E19FFDD2656519B008DA757 /* FilmsListTableViewDataSource.swift in Sources */,
 				8E19FF852654E8C0008DA757 /* SceneDelegate.swift in Sources */,
-				8E19FFCD26564A04008DA757 /* FilmHeaderViewController.swift in Sources */,
-				8E755B1A2656F5EA00B065A8 /* BadServerViewController.swift in Sources */,
-				8E19FFBB2654F413008DA757 /* FilmCellViewController.swift in Sources */,
+				8E19FFCD26564A04008DA757 /* FilmHeaderView.swift in Sources */,
+				8E19FFBB2654F413008DA757 /* FilmTableViewCell.swift in Sources */,
 				8E19FFD426564B25008DA757 /* HeaderConfiguratorProtocol.swift in Sources */,
 				8E19FFB52654EDFB008DA757 /* Films.swift in Sources */,
 				8E755B0F2656C5BF00B065A8 /* DetailFilmViewModel.swift in Sources */,

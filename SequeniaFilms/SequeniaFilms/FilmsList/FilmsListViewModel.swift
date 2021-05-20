@@ -15,7 +15,7 @@ protocol FilmsListViewModelProtocol {
 
 class FilmsListViewModel: FilmsListViewModelProtocol {
     
-    let headerIdentifier = String(describing: FilmHeaderViewController.self)
+    let headerIdentifier = String(describing: FilmHeaderView.self)
     var title: String = "Films"
     private let networkService: NetworkServiceProtocol
     private var dataSource: FilmsListTableViewDataSource!
@@ -40,8 +40,7 @@ class FilmsListViewModel: FilmsListViewModelProtocol {
             if let films = films {
                 self.films = films.films ?? []
                 let models = self.configureFilmsModels()
-                let sectionStage = true
-                self.dataSource = FilmsListTableViewDataSource(models: models, headerModels: self.headerIdentifier, sectionStage: sectionStage)
+                self.dataSource = FilmsListTableViewDataSource(models: models, headerID: self.headerIdentifier)
                 completion(self.dataSource)
             }
             if error != nil {
@@ -66,6 +65,7 @@ class FilmsListViewModel: FilmsListViewModelProtocol {
     }
     
     private func configureSectionModels(year: Int) -> [CellConfiguratorProtocol] {
+        
         var sectionFilms: [CellConfiguratorProtocol] = []
         
         for index in 0 ..< films.count {

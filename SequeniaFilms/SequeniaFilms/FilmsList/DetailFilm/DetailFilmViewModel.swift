@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol DetailListViewModelProtocol {
+protocol DetailFilmViewModelProtocol {
     
     func getName() -> String
     func getLocalName() -> String
@@ -16,7 +16,7 @@ protocol DetailListViewModelProtocol {
     func getDescription() -> String
 }
 
-class DetailFilmViewModel: DetailListViewModelProtocol {
+class DetailFilmViewModel: DetailFilmViewModelProtocol {
     
     private var name: String
     private var localName: String
@@ -51,5 +51,4 @@ class DetailFilmViewModel: DetailListViewModelProtocol {
     func getDescription() -> String {
         return description
     }
-    
 }

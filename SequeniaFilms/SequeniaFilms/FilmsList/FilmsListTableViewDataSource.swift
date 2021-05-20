@@ -21,13 +21,11 @@ struct SectionModel {
 
 class FilmsListTableViewDataSource: NSObject {
     private var models: [SectionModel]
-    private var headerModels: String
-    private var sectionStage: Bool
+    private var headerID: String
 
-    internal init(models: [SectionModel], headerModels: String, sectionStage: Bool) {
+    internal init(models: [SectionModel], headerID: String) {
         self.models = models
-        self.headerModels = headerModels
-        self.sectionStage = sectionStage
+        self.headerID = headerID
     }
 }
 
@@ -66,7 +64,7 @@ extension FilmsListTableViewDataSource: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let model = models[section].sectionName
-        if let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: headerModels) as? ConfigurableHeaderProtocol {
+        if let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: headerID) as? ConfigurableHeaderProtocol {
             return header.configureWithHeaderConfigurator(model: model)
         }
         return UITableViewHeaderFooterView()
